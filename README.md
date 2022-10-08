@@ -1,7 +1,7 @@
 # lock_core_VS_std_thread<br>
-Compared that locking CPU core and using std:thread<br>
-コア似スレッドを割り当てちゃうのとstd:threadを使ってタスクのコア割当を任せちゃうのどっちが早いか気になったから作ってみたYO<br>
-このコードでの条件だといがいと任せちゃうほうが速かった...<br>
+Compared that locking physical CPU core and std:thread<br>
+物理コアをロックするのとstd:threadでどっちが早いか試すアプリ。<br>
+このコードでの条件だといがいとstd:threadに任せちゃうほうが速かった...<br>
 Benched for 30sec.<br>
 assign thread to core:    267161689<br>
 assign free thread:       822861222<br>
